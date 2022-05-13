@@ -1,5 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 * {
     padding: 0;
     margin: 0;
     list-style: none;
+    font-family: "Lato", sans-serif;
+}
+
+.header {
+    background: #222222;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    &__left {
+        margin-left: 32px;
+    }
+    &__right {
+        margin-right: 41px;
+    }
+}
+.logo {
+    margin-right: 41px;
+}
+.search {
+}
+.burger {
+    margin-right: 33px;
+}
+.user {
+    margin-right: 33px;
+}
+.cart {
+}
+
+.top-content {
+    margin-bottom: 65px;
+    background: #f1e4e6;
+    padding: 0 16px;
+    &__head {
+        display: flex;
+    }
+    &__head-image {
+        margin-left: -17%;
+        margin-right: 60px;
+    }
+    &__head-text {
+        display: flex;
+        text-align: left;
+        align-self: center;
+    }
+    &__line {
+        height: 96px;
+        width: 12px;
+        background-color: #f16d7f;
+        margin-right: 16px;
+    }
+    &__headding {
+    }
+}
+
+.body-content {
+    padding: 0 16px;
+    &__catalog {
+        margin-bottom: 96px;
+    }
+    &__catalog-box-1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__catalog-item {
+        position: relative;
+    }
+    &__catalog-item2 {
+        position: relative;
+    }
+    &__catalog-link {
+    }
+    &__catalog-box-2 {
+    }
+    &__catalog-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.title-top {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+.text-top {
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+    color: #222222;
+}
+.text-top2 {
+    color: #e05c6e;
+}
+
+.p-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+.p-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #e05c6e;
+}
+
+.img {
+    width: 100%;
 }

@@ -153,6 +153,7 @@
 }
 
 .content-items {
+    margin-bottom: 18px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -197,5 +198,110 @@
         font-size: 16px;
         line-height: 19px;
         color: #f16d7f;
+    }
+}
+
+.content-button {
+    max-width: 211px;
+    margin: 0 auto 95px;
+    border: 1px solid #ff6a6a;
+    &__link {
+        display: block;
+        padding: 14px 38px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #f26376;
+    }
+}
+
+.foot-content {
+    background: #222224;
+    min-height: 341px;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 360px;
+        text-align: center;
+        margin-top: 103px;
+    }
+    &__link {
+    }
+    &__img {
+        margin-bottom: 28px;
+        height: 40px;
+    }
+    &__title {
+        margin-bottom: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #fbfbfb;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: #fbfbfb;
+        padding: 0 32px;
+    }
+}
+
+.footer {
+    background: rgba(244, 244, 244, 0.7);
+    &__top {
+        background: url(../images/back.jpg) 0 0 / cover no-repeat;
+        height: 450px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    &__top-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__bot {
+        background: #222224;
+        height: 80px;
+    }
+    &__info {
+        max-width: 360px;
+        text-align: center;
+    }
+    &__info-photo {
+        padding-top: 85px;
+        margin-bottom: 40px;
+    }
+    &__info-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    }
+    &__subscribe {
+        text-align: center;
+        padding-top: 150px;
+    }
+    &__subscribe-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    &__subscribe-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
     }
 }

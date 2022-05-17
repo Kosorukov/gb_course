@@ -186,6 +186,7 @@
 }
 
 .content-items {
+  margin-bottom: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,5 +239,133 @@
   font-size: 16px;
   line-height: 19px;
   color: #f16d7f;
+}
+
+.content-button {
+  max-width: 211px;
+  margin: 0 auto 95px;
+  border: 1px solid #ff6a6a;
+}
+
+.content-button__link {
+  display: block;
+  padding: 14px 38px;
+}
+
+.content-button__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+}
+
+.foot-content {
+  background: #222224;
+  min-height: 341px;
+}
+
+.foot-content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.foot-content__item {
+  max-width: 360px;
+  text-align: center;
+  margin-top: 103px;
+}
+
+.foot-content__img {
+  margin-bottom: 28px;
+  height: 40px;
+}
+
+.foot-content__title {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #fbfbfb;
+}
+
+.foot-content__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #fbfbfb;
+  padding: 0 32px;
+}
+
+.footer {
+  background: rgba(244, 244, 244, 0.7);
+}
+
+.footer__top {
+  background: url(../images/back.jpg) 0 0/cover no-repeat;
+  height: 450px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footer__top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bot {
+  background: #222224;
+  height: 80px;
+}
+
+.footer__info {
+  max-width: 360px;
+  text-align: center;
+}
+
+.footer__info-photo {
+  padding-top: 85px;
+  margin-bottom: 40px;
+}
+
+.footer__info-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.footer__subscribe {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.footer__subscribe-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.footer__subscribe-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 /*# sourceMappingURL=style.css.map */

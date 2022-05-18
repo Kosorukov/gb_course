@@ -17,12 +17,17 @@
                 <div class="menu__left">
                     <a href="index.html" class="logo"><img src="icons/logo.svg" alt="logo"></a>
                     <a href="#" class="search"><img src="icons/search.svg" alt="search"></a>
+                    <form class="browse">
+                        <input class="browse" type="search" name="q" placeholder="Browse">
+                    </form>
                 </div>
-                <div class="menu__right">
-                    <a href="#" class="burger"><img src="icons/burger.svg" alt="burger"></a>
+                <nav class="menu__right">
+                    <img src="icons/burger.svg" alt="burger" class="burger">
                     <a href="#" class="user" target="_blank"><img src="icons/user.svg" alt="user"></a>
                     <a href="#" class="cart" target="_blank"><img src="icons/cart.svg" alt="cart"></a>
-                </div>
+                    <div class="menu-box">
+                    </div>
+                </nav>
             </nav>
         </div>
     </header>
@@ -102,6 +107,11 @@
                     <a href="#" class="content-items__box-link">
                         <div class="content-items__pic"><img src="images/pic1.jpg" alt="img"
                                 class="content-items__pic-img">
+                            <div class="content-item__hover">
+                                <div class="content-item__add">
+                                    <img src="icons/addToCart.png" alt="img" class="content-item__hover-cart">
+                                </div>
+                            </div>
                         </div>
                         <div class="content-items__description">
                             <p class="content-items__description-title">ELLERY X M'O CAPSULE</p>
@@ -117,6 +127,12 @@
                     <a href="#" class="content-items__box-link">
                         <div class="content-items__pic"><img src="images/pic2.jpg" alt="img"
                                 class="content-items__pic-img">
+                            <div class="content-item__hover">
+                                <div class="content-item__add"> <img src="icons/addToCart.png" alt="img"
+                                        class="content-item__hover-cart">
+                                </div>
+                            </div>
+
                         </div>
                         <div class="content-items__description">
                             <p class="content-items__description-title">ELLERY X M'O CAPSULE</p>
@@ -132,6 +148,12 @@
                     <a href="#" class="content-items__box-link">
                         <div class="content-items__pic"><img src="images/pic3.jpg" alt="img"
                                 class="content-items__pic-img">
+                            <div class="content-item__hover">
+                                <div class="content-item__add"> <img src="icons/addToCart.png" alt="img"
+                                        class="content-item__hover-cart">
+                                </div>
+                            </div>
+
                         </div>
                         <div class="content-items__description">
                             <p class="content-items__description-title">ELLERY X M'O CAPSULE</p>
@@ -147,6 +169,11 @@
                     <a href="#" class="content-items__box-link">
                         <div class="content-items__pic"><img src="images/pic4.jpg" alt="img"
                                 class="content-items__pic-img">
+                            <div class="content-item__hover">
+                                <div class="content-item__add"> <img src="icons/addToCart.png" alt="img"
+                                        class="content-item__hover-cart">
+                                </div>
+                            </div>
                         </div>
                         <div class="content-items__description">
                             <p class="content-items__description-title">ELLERY X M'O CAPSULE</p>
@@ -157,11 +184,17 @@
                             <p class="content-items__description-price">$52.00</p>
                         </div>
                     </a>
+
                 </section>
                 <section class="content-items__box">
                     <a href="#" class="content-items__box-link">
                         <div class="content-items__pic"><img src="images/pic5.jpg" alt="img"
                                 class="content-items__pic-img">
+                            <div class="content-item__hover">
+                                <div class="content-item__add"> <img src="icons/addToCart.png" alt="img"
+                                        class="content-item__hover-cart">
+                                </div>
+                            </div>
                         </div>
                         <div class="content-items__description">
                             <p class="content-items__description-title">ELLERY X M'O CAPSULE</p>
@@ -172,11 +205,17 @@
                             <p class="content-items__description-price">$52.00</p>
                         </div>
                     </a>
+
                 </section>
                 <section class="content-items__box">
                     <a href="#" class="content-items__box-link">
                         <div class="content-items__pic"><img src="images/pic6.jpg" alt="img"
                                 class="content-items__pic-img">
+                            <div class="content-item__hover">
+                                <div class="content-item__add"> <img src="icons/addToCart.png" alt="img"
+                                        class="content-item__hover-cart">
+                                </div>
+                            </div>
                         </div>
                         <div class="content-items__description">
                             <p class="content-items__description-title">ELLERY X M'O CAPSULE</p>
@@ -187,6 +226,7 @@
                             <p class="content-items__description-price">$52.00</p>
                         </div>
                     </a>
+
                 </section>
             </div>
             <div class="content-button">
@@ -234,21 +274,49 @@
                     <div class="footer__info">
                         <img src="images/face.png" alt="photo" class="footer__info-photo">
                         <p class="footer__info-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                            a
-                            pulvinar purus condimentum“</p>
+                            a pulvinar purus condimentum“</p>
                     </div>
                     <div class="footer__subscribe">
                         <p class="footer__subscribe-title">SUBSCRIBE</p>
                         <p class="footer__subscribe-text">FOR OUR NEWLETTER AND PROMOTION</p>
-                        <form action="">
-                            <input type="email" name=" Email" id="" placeholder="Enter Your Email">
-                            <button type="submit">Subscribe</button>
+                        <form action="" class="form-email">
+                            <div class="form-box">
+                                <input type="email" name=" Email" id="" placeholder="Enter Your Email"
+                                    class="email-input">
+                                <button type="submit" class="email-button">Subscribe</button>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer__bot"></div>
+        <div class="footer__bot">
+            <div class="container">
+                <div class="footer__bot-content">
+                    <div class="footer__bot-left">
+                        <p class="footer-text">© 2021 Brand All Rights Reserved.</p>
+                    </div>
+                    <section class="footer__bot-right">
+                        <a href="" class="footer__link">
+                            <div class="footer__minibox"><img src="icons/Vectorfacebook.png" alt="f"
+                                    class="footer__icon"></div>
+                        </a>
+                        <a href="" class="footer__link">
+                            <div class="footer__minibox"><img src="icons/Vectorinstagram.png" alt="In"
+                                    class="footer__icon"></div>
+                        </a>
+                        <a href="" class="footer__link">
+                            <div class="footer__minibox"><img src="icons/Vectorpinterest.png" alt="P"
+                                    class="footer__icon"></div>
+                        </a>
+                        <a href="" class="footer__link">
+                            <div class="footer__minibox"><img src="icons/Vectortwitter.png" alt="tw"
+                                    class="footer__icon"></div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

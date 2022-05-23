@@ -618,4 +618,140 @@
 .footer__minibox:hover .fa {
   color: #ffffff;
 }
+
+/* CATALOG */
+.breadcrumb {
+  background: #f8f3f4;
+  min-height: 148px;
+  margin-bottom: 51px;
+}
+
+.breadcrumb-box {
+  min-height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+}
+
+.arrivals h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.breadcrumb-list li {
+  display: inline;
+}
+
+.breadcrumb-list a {
+  display: inline;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.last-crumb {
+  color: #f16d7f;
+  font-weight: 700;
+}
+
+ul.breadcrumb-list li + li:before {
+  padding: 8px;
+  color: #636363;
+  content: "/\00a0";
+}
+
+.catalog-content {
+  width: 296px;
+  margin: 0 auto 65px;
+}
+
+.cont-filter {
+  position: relative;
+}
+
+.catalog-content__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog-content__link a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}
+
+.catalog-content__link a::after {
+  content: url(../icons/arrowDown.png);
+  margin-left: 10px;
+}
+
+.pagination {
+  margin: 0 auto;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+
+.pagination a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6f6e6e;
+  margin-right: 10px;
+  padding: 6px;
+}
+
+.pagination a:hover {
+  color: #f16d7f;
+}
+
+.pagination-box {
+  padding: 11px 0;
+}
+
+.pagination-box img {
+  padding: 0 16px;
+}
+
+.filter {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 1;
+}
+
+.filter-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter-btn h2 {
+  margin-right: 11px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
 /*# sourceMappingURL=style.css.map */

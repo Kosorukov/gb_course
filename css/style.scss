@@ -586,6 +586,7 @@ ul.breadcrumb-list li + li:before {
     line-height: 17px;
     color: #6f6e6e;
     text-decoration: none;
+    padding: 7px;
 }
 .catalog-content__link a::after {
     content: url(../icons/arrowDown.png);
@@ -728,4 +729,42 @@ ul.breadcrumb-list li + li:before {
 
 .accordion-title {
     border-bottom: 1px solid #ebebeb;
+}
+
+.catalog-content__link {
+    position: relative;
+}
+.filter-list {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 79px;
+    min-height: 103px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 1;
+    display: none;
+    background-color: #ffffff;
+}
+.filter-checkbox {
+    padding-top: 7px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.filter-checkbox label {
+    margin-left: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6f6e6e;
+    display: inline-block;
+    width: 100%;
+}
+.filter-checkbox input {
+    margin-top: 2px;
+    display: inline-block;
+}
+.catalog-content__link a:hover .filter-list {
+    display: block;
 }

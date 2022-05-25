@@ -728,7 +728,14 @@ ul.breadcrumb-list li + li:before {
 }
 
 .accordion-title {
+    width: 100%;
+    height: 35px;
     border-bottom: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-title p {
 }
 
 .catalog-content__link {

@@ -250,6 +250,9 @@ $head-bg: #222222;
     &__description {
         padding: 20px;
     }
+    &__description a {
+        text-decoration: none;
+    }
 
     &__description-title {
         margin-bottom: 13px;
@@ -258,6 +261,7 @@ $head-bg: #222222;
         font-size: 13px;
         line-height: 16px;
         color: #000000;
+        text-decoration: none;
     }
 
     &__description-text {
@@ -267,6 +271,7 @@ $head-bg: #222222;
         font-size: 14px;
         line-height: 17px;
         color: #5d5d5d;
+        text-decoration: none;
     }
     &__description-price {
         font-style: normal;
@@ -276,7 +281,9 @@ $head-bg: #222222;
         color: #f16d7f;
     }
 }
-
+a.content-items__box-link {
+    text-decoration: none;
+}
 .content-items__box-link a {
     text-decoration: none;
 }
@@ -547,6 +554,7 @@ $head-bg: #222222;
     font-size: 14px;
     line-height: 17px;
     color: #636363;
+    text-decoration: none;
 }
 
 .last-crumb {
@@ -577,6 +585,7 @@ ul.breadcrumb-list li + li:before {
     font-size: 14px;
     line-height: 17px;
     color: #6f6e6e;
+    text-decoration: none;
 }
 .catalog-content__link a::after {
     content: url(../icons/arrowDown.png);
@@ -618,7 +627,7 @@ ul.breadcrumb-list li + li:before {
 .filter-btn {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 16px;
     display: flex;
 }
 .filter-btn h2 {
@@ -631,13 +640,10 @@ ul.breadcrumb-list li + li:before {
 }
 
 .menu__box-catalog {
-    display: none;
-}
-
-.menu__box-catalog {
     position: absolute;
     width: 232px;
-    top: 0px;
+    top: -13px;
+    left: -16px;
     background: #ffffff;
     display: none;
     border-radius: 5px;
@@ -649,28 +655,77 @@ ul.breadcrumb-list li + li:before {
     box-shadow: 0 0 20px #ccc;
 }
 
-.filter-btn:hover .filter-btn h2 {
+.filter-btn:hover i {
     display: block;
     color: #f16d7f;
+    z-index: 2;
 }
-
-.filter-btn:hover .filter-btn img {
-    display: none;
-}
-.menu__box-list p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+.filter-btn:hover h2 {
+    display: block;
     color: #f16d7f;
-    margin-bottom: 12px;
+    z-index: 2;
 }
 
-.menu__box-list a {
+/* Стиль кнопок, которые используются для открытия и закрытия панели аккордеона */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    background: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+}
+
+.accordion:first-child {
+    padding-top: 54px;
+}
+
+/* Добавить цвет фона для кнопки, если она нажата (добавить .активный класс с JS), а при наведении на него курсора мыши (наведите курсор) */
+.active,
+.accordion:hover {
+    color: #f16d7f;
+}
+
+/* Стиль аккордеон панели. Примечание: скрыто по умолчанию */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel-list a {
+    display: block;
+    text-shadow: none;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #6f6e6e;
+}
+
+.panel-link {
     margin-bottom: 11px;
+    padding-left: 16px;
+}
+
+.param-fch {
+    margin-top: 7px;
+}
+
+.pink-stick {
+    width: 5px;
+    height: 37px;
+    background: #f16d7f;
+    margin-right: 11px;
+}
+
+.accordion-title {
+    border-bottom: 1px solid #ebebeb;
 }

@@ -251,6 +251,39 @@
   color: #e05c6e;
 }
 
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 .img {
   width: 100%;
 }
@@ -549,6 +582,68 @@ a.content-items__box-link {
   padding-left: 22px;
 }
 
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.1, 0.9, 1);
+            transform: scale3d(1.1, 0.9, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 1.1, 1);
+            transform: scale3d(0.9, 1.1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.1, 0.9, 1);
+            transform: scale3d(1.1, 0.9, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 1.1, 1);
+            transform: scale3d(0.9, 1.1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
 .email-button {
   background: #f16d7f;
   outline: none;
@@ -561,11 +656,11 @@ a.content-items__box-link {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+  -webkit-animation: jello-horizontal 0.9s infinite both;
+          animation: jello-horizontal 0.9s infinite both;
 }
 
 .email-button:hover {
-  font-weight: 700;
-  font-size: 16px;
   background: #ffffff;
   border: 1px solid #f16d7f;
   color: #f16d7f;
@@ -930,13 +1025,32 @@ ul.breadcrumb-list li + li:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.product-box img {
+.product-box-img {
   max-width: 597px;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 21px;
+  display: block;
+  background: rgba(42, 42, 42, 0.15);
+  padding: 9px 14px;
+}
+
+.fa-angle-left:hover {
+  color: #f16d7f;
+}
+
+.fa-angle-right:hover {
+  color: #f16d7f;
 }
 
 .product-desc-window {
@@ -1063,5 +1177,229 @@ a.product-add-link {
 
 .bread-product {
   margin-bottom: 0;
+}
+
+/* --------Registration-------*/
+.registration-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration-box {
+  width: 33.333%;
+  margin-right: 128px;
+}
+
+.form-registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 96px;
+  padding: 15px;
+}
+
+.gender-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 35px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.label-name {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.form-fname {
+  margin-bottom: 21px;
+  padding-left: 17px;
+  height: 45px;
+  border: 1px solid #a4a4a4;
+}
+
+.form-lname {
+  margin-bottom: 34px;
+  padding-left: 17px;
+  height: 45px;
+  border: 1px solid #a4a4a4;
+}
+
+.form-email-reg {
+  margin-bottom: 21px;
+  padding-left: 17px;
+  height: 45px;
+  border: 1px solid #a4a4a4;
+}
+
+.form-pass {
+  margin-bottom: 15px;
+  padding-left: 17px;
+  height: 45px;
+  border: 1px solid #a4a4a4;
+}
+
+.form-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+  margin-bottom: 39px;
+}
+
+.form-gender {
+  margin-right: 10px;
+}
+
+.female {
+  margin-left: 20px;
+}
+
+.btn-box {
+  position: relative;
+}
+
+.btn-box::after {
+  content: url(../icons/arrRight.svg);
+  position: absolute;
+  top: 14px;
+  left: 121px;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+.btn-submit {
+  height: 50px;
+  width: 167px;
+  background: #f16d7f;
+  text-align: left;
+  padding-left: 29px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  border: none;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+          animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.registration-text {
+  width: 66.666%;
+}
+
+.registration-text h2 {
+  margin-bottom: 22px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration-text p {
+  margin-bottom: 21px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration-text li {
+  margin-bottom: 16px;
+  padding-top: 13px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration-text li::before {
+  content: url(../icons/type.svg);
+  margin-right: 23px;
 }
 /*# sourceMappingURL=style.css.map */

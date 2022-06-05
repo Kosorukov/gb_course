@@ -59,7 +59,7 @@
                         <li class="menu__link"> <a href="#" class="user" target="_blank">
                                 <img src="icons/user.svg" alt="user"></a>
                         </li>
-                        <li class="menu__link"> <a href="cart.html" class="cart" target="_blank">
+                        <li class="menu__link"> <a href="#" class="cart" target="_blank">
                                 <img src="icons/cart.svg" alt="cart"></a>
                         </li>
                     </ul>
@@ -72,49 +72,73 @@
         <div class="container">
             <div class="breadcrumb-box">
                 <div class="arrivals">
-                    <h2>REGISTRATION</h2>
+                    <h2>SHOPPING CART</h2>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="registration">
+    <div class="shopping-cart">
         <div class="container">
-            <div class="registration-content">
-                <div class="registration-box">
-                    <form action="#" class="form-registration">
-                        <label for="name" class="label-name">Your Name</label>
-                        <input type="text" name="first-name" id="name" placeholder="First Name"
-                            class="form-fname">
-                        <input type="text" name="first-name" id="name" placeholder="Last Name"
-                            class="form-lname">
-                        <div class="gender-box">
-                            <input type="radio" name="gender" id="male" class="form-gender">Male
-                            <input type="radio" name="gender" id="female" class="form-gender female">Female
+            <div class="cart">
+                <div class="cart-box">
+                    <div class="cart-item">
+                        <div class="cart-img">
+                            <a href="product.html"><img src="images/pic11.jpg" alt=""></a>
                         </div>
-                        <label for="" class="label-name">Login details</label>
-                        <input type="email" name="login" id="" placeholder="Email" class="form-email-reg">
-                        <input type="password" name="password" id="" placeholder="Password" class="form-pass">
-                        <p class="form-text">Please use 8 or more characters, with at least 1 number and a
-                            mixture
-                            of
-                            uppercase and lowercase letters</p>
-                        <div class="btn-box"><input type="submit" value="JOIN NOW" class="btn-submit"></div>
+                        <div class="cart-info">
+                            <h3>MANGO PEOPLE <br> T-SHIRT</h3>
+                            <p>Price: <span>$300</span> </p>
+                            <p>Color: Red</p>
+                            <p>Size: Xl </p>
+                            <form action="active">
+                                <label class="quantity-label" for="quantity">Quantity:</label>
+                                <input class="quantity-number" type="number" name="quantity" id="quantity"
+                                    min="1" max="10" value="1">
+                            </form>
+                        </div>
+                        <div class="cart-mark"><a href="#"><i class="fa fa-solid fa-xmark"></i></a></div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-img">
+                            <a href="product.html"><img src="images/pic12.jpg" alt=""></a>
+                        </div>
+                        <div class="cart-info">
+                            <h3>MANGO PEOPLE <br> T-SHIRT</h3>
+                            <p>Price: <span>$300</span> </p>
+                            <p>Color: Red</p>
+                            <p>Size: Xl </p>
+                            <form action="active">
+                                <label class="quantity-label" for="quantity">Quantity:</label>
+                                <input class="quantity-number" type="number" name="quantity" id="quantity"
+                                    min="1" max="10" value="1">
+                            </form>
+                        </div>
+                        <div class="cart-mark"><a href="#"><i class="fa fa-solid fa-xmark"></i></a></div>
+                    </div>
+                    <form class="cart-btn">
+                        <input type="button" value="CLEAR SHOPPING CART">
+                        <input type="button" value="CONTINUE SHOPPING">
                     </form>
                 </div>
-                <article class="registration-text">
-                    <h2>LOYALTY HAS ITS PERKS</h2>
-                    <p>Get in on the loyalty program where you can earn points and unlock serious perks.
-                        Starting
-                        with these as soon as you join:</p>
-                    <ul>
-                        <li>15% off welcome offer</li>
-                        <li>Free shipping, returns and exchanges on all orders</li>
-                        <li>$10 off a purchase on your birthday </li>
-                        <li>Early access to products</li>
-                        <li>Exclusive offers & rewards</li>
-                    </ul>
-                </article>
+                <form action="active" class="cart-form">
+                    <div class="shipping">
+                        <h3>SHIPPING ADRESS</h3>
+                        <input type="text" name="country" id="" placeholder="Bangladesh">
+                        <input type="text" name="state" id="" placeholder="State">
+                        <input type="text" name="zip" id="" placeholder="Postcode / Zip">
+                        <button>
+                            <p>GET A QUOTE</p>
+                        </button>
+                    </div>
+                    <div class="total">
+                        <p class="total-sub"><span class="span-marg">SUB TOTAL</span>$900</p>
+                        <p class="total-grand"><span class="span-marg">GRAND TOTAL</span><span
+                                class="span-pink">$900</span></p>
+                        <div class="total-line"></div>
+                        <input type="button" value="PROCEED TO CHECKOUT">
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -384,6 +384,10 @@ a.content-items__box-link {
     }
 }
 
+.foot-content__box:last-child {
+    padding-bottom: 81px;
+}
+
 .content-button:hover {
     background-color: #f26376;
 }
@@ -401,7 +405,7 @@ a.content-items__box-link {
         flex-wrap: wrap;
     }
     &__item {
-        max-width: 360px;
+        width: 31%;
         text-align: center;
         margin-top: 103px;
     }
@@ -435,7 +439,7 @@ a.content-items__box-link {
     &__top {
         background: url(../images/back.jpg) 0 0 / cover no-repeat;
         background-position: bottom;
-        height: 450px;
+        min-height: 450px;
         margin: 0 auto;
     }
     &__top-content {
@@ -444,7 +448,7 @@ a.content-items__box-link {
     }
     &__bot {
         background: #222224;
-        height: 80px;
+        min-height: 80px;
     }
     &__info {
         max-width: 360px;
@@ -489,6 +493,7 @@ a.content-items__box-link {
     min-width: 233px;
     background: #e1e1e1;
     padding-left: 22px;
+    padding-right: 22px;
 }
 @keyframes jello-horizontal {
     0% {
@@ -1392,6 +1397,27 @@ a.product-add-link {
     .top-content__head-image {
         margin-right: 5px;
     }
+    .foot-content__box {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .foot-content__item {
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 48px;
+    }
+    .footer__top-content {
+        flex-direction: column;
+    }
+    .footer__info {
+        margin: 0 auto;
+    }
+    .footer__subscribe {
+        padding-bottom: 140px;
+    }
+    .form-box {
+        justify-content: center;
+    }
 }
 @media (max-width: 375px) {
     .content-items__box {
@@ -1405,6 +1431,9 @@ a.product-add-link {
     }
     .top-content__head-image {
         display: none;
+    }
+    .email-input {
+        min-width: 150px;
     }
 }
 
@@ -1426,6 +1455,16 @@ a.product-add-link {
     }
     .menu__box {
         left: -120px;
+    }
+    .footer__bot-content {
+        flex-direction: column-reverse;
+    }
+    .footer__bot-left {
+        margin: 0 auto;
+        padding-bottom: 9px;
+    }
+    .footer__bot-right {
+        margin: 0 auto;
     }
 }
 
